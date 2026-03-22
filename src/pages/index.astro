@@ -1,11 +1,36 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import MainLayout from '../layouts/MainLayout.astro';
+import { 
+	general, 
+	contracts 
+} from '../data/lists';
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+
+<MainLayout>
+	<div class="p-2 overflow-auto flex flex-col">
+		<p class="">19-18-8-103 DOCS</p>
+		<span class="mt-4 mb-1 text-computer">
+			⎯⎯ general ⎯⎯
+		</span>
+		{general.map((item) => (
+			<a 
+				href={item.path}
+				class="hover:underline text-computer pl-2"
+			>
+			• {item.title}
+			</a>
+		))}
+		<span class="mt-4 mb-1 text-contract">
+			⎯⎯ contracts ⎯⎯
+		</span>
+		{contracts.map((item) => (
+			<a 
+				href={item.path}
+				class="hover:underline text-contract pl-2"
+			>
+			• {item.title}
+			</a>
+		))}
+	</div>
+</MainLayout>

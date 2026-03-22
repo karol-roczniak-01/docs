@@ -1,0 +1,55 @@
+.markdown {
+  font-family: monospace;
+  
+  & h1 { 
+    font-size: 20px; 
+    font-weight: 700;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  & h2 { 
+    font-size: 16px; 
+    font-weight: 700;
+    padding-bottom: 8px;
+    padding-top: 8px;
+  }
+  & h3 { 
+    font-size: 14px; 
+    font-weight: 700;
+    padding-bottom: 6px;
+    padding-top: 6px;
+  }
+
+  & p { 
+    padding-bottom: 6px;
+  }
+
+  & ul, & ol {
+    padding-left: 20px;
+    padding-bottom: 6px;
+  }
+
+  & ul {
+    list-style-type: disc;
+  }
+
+  & ol {
+    list-style-type: decimal;
+  }
+
+  & li {
+    padding-bottom: 4px;
+  }
+
+  & code {
+    background: #f3f4f6;
+    
+  }
+
+  & pre {
+    background: #1e1e1e;
+    
+
+    & code { background: none; }
+  }
+}

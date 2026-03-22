@@ -1,0 +1,29 @@
+---
+import Player from '../../components/Player';
+import { videos } from '../../data/videos';
+import VideoLayout from '../../layouts/VideoLayout.astro';
+
+export function getStaticPaths() {
+  return videos.map(v => ({ params: { slug: v.slug }, props: v }));
+}
+
+const { title, file } = Astro.props;
+---
+
+<VideoLayout>
+  <div class="h-dvh w-full flex flex-col p-2 text-computer">
+  <a 
+    href="/"
+    class="hover:underline"
+  >
+    ← back to all docs
+  </a>
+  <div class="h-full w-full flex items-center justify-center mb-4">
+    <Player 
+      client:load 
+      title={title}
+      src={`/video/${file}`}
+    />
+  </div>
+  </div>
+</VideoLayout>

@@ -1,0 +1,22 @@
+---
+import "../styles/markdown.css";
+import MainLayout from "./MainLayout.astro";
+---
+
+<MainLayout>
+  <div class="h-dvh w-full markdown flex flex-col text-computer">
+    <header class="p-2 flex items-center">
+      <a 
+        href="/"
+        class="hover:underline"
+      >
+        ← back to all docs
+      </a>
+    </header>
+    <div class="h-full overflow-auto p-2">
+      <div class="md:max-w-xl">
+        <slot />
+      </div>
+    </div>
+  </div>
+</MainLayout>

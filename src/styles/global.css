@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+:root {
+  font-family: monospace;
+  background: black;
+  color: white;
+  caret-animation: manual;
+  caret-shape: block;
+  caret-color: grey;
+
+  --charcoal:      #28282e;
+  --plum:          #6c5671;
+  --linen:         #d9c8bf;
+  --rose:          #f98284;
+  --lavender:      #b0a9e4;
+  --periwinkle:    #accce4;
+  --seafoam:       #b3e3da;
+  --bubblegum:     #feaae4;
+  --sage:          #87a889;
+  --mint:          #b0eb93;
+  --chartreuse:    #e9f59d;
+  --peach:         #ffe6c6;
+  --terracotta:    #dea38b;
+  --apricot:       #ffc384;
+  --lemon:         #fff7a0;
+  --cream:         #fff7e4;
+}
+
+@theme {
+  --color-computer: var(--mint);
+  --color-error: var(--rose);
+  --color-org: var(--periwinkle);
+  --color-contract: var(--lemon);
+}
