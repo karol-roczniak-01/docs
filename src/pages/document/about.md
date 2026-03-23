@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/DocumentLayout.astro
-title: "My Page Title"
+title: "About"
 ---
 
 # About
@@ -15,6 +15,4 @@ First, because I like it in general. But there are more reasons, and the major o
 
 ## What can be done there
 
-- **Contracts**: You can post what you need done — e.g. HVAC service in Dallas. Others can create a company profile that, if it matches the demand, lets them apply to get your contact info and move the deal forward. [Read more about contracts](/src/).
-
-- **Sources**: It's all about debunking false info on the web. If you're an expert in vaccinology and read an article claiming that after some vaccine a third hand will grow on your back, and you disagree and can back it up with arguments and sources, you can just add a critique — and others can read it by checking the URL of the article you're criticizing. [Reader more about sources](/src/).
+- **Contracts**: You can post what you need done — e.g. HVAC service in Dallas. Others can create a company profile that, if it matches the demand, lets them apply to get your contact info and move the deal forward. [Read more about contracts](/document/how-to-use-it).

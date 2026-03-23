@@ -24,6 +24,11 @@
     padding-bottom: 6px;
   }
 
+  & a {
+    color: #b0eb93;
+    text-decoration: underline;
+  }
+
   & ul, & ol {
     padding-left: 20px;
     padding-bottom: 6px;
@@ -35,15 +40,24 @@
 
   & ol {
     list-style-type: decimal;
+    margin-left: 12px;
   }
 
   & li {
     padding-bottom: 4px;
   }
 
+  & hr {
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+
   & code {
-    background: #f3f4f6;
-    
+    color: #ffffff;
+    font-family: monospace;
+    background-color: #1e1e1e;
+    padding-right: 4px;
+    padding-left: 4px;
   }
 
   & pre {

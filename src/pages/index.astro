@@ -1,6 +1,7 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
 import { 
+	legal,
 	general, 
 	contracts 
 } from '../data/lists';
@@ -9,7 +10,28 @@ import {
 
 <MainLayout>
 	<div class="p-2 overflow-auto flex flex-col">
-		<p class="">19-18-8-103 DOCS</p>
+		<div class="flex gap-2 items-center">
+			<p class="">DOCS</p>
+			<a 
+				href="https://19188103.com" 
+				class="underline">19-18-8-103
+			</a>
+		</div>
+
+		{/* LEGAL */}
+		<span class="mt-4 mb-1 text-document">
+			⎯⎯ legal ⎯⎯
+		</span>
+		{legal.map((item) => (
+			<a 
+				href={item.path}
+				class="hover:underline text-document pl-2"
+			>
+			• {item.title}
+			</a>
+		))}
+
+		{/* GENERAL */}
 		<span class="mt-4 mb-1 text-computer">
 			⎯⎯ general ⎯⎯
 		</span>
@@ -21,6 +43,8 @@ import {
 			• {item.title}
 			</a>
 		))}
+
+		{/* CONTRACTS */}
 		<span class="mt-4 mb-1 text-contract">
 			⎯⎯ contracts ⎯⎯
 		</span>

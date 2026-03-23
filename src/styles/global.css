@@ -31,4 +31,5 @@
   --color-error: var(--rose);
   --color-org: var(--periwinkle);
   --color-contract: var(--lemon);
+  --color-document: var(--linen)
 }
