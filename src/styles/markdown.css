@@ -55,15 +55,12 @@
   & code {
     color: #ffffff;
     font-family: monospace;
-    background-color: #1e1e1e;
+    background-color: #ffe6c620;
     padding-right: 4px;
     padding-left: 4px;
   }
 
   & pre {
-    background: #1e1e1e;
-    
-
-    & code { background: none; }
+    background: #b0eb9330;
   }
 }

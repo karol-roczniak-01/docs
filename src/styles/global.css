@@ -8,28 +8,63 @@
   caret-shape: block;
   caret-color: grey;
 
-  --charcoal:      #28282e;
-  --plum:          #6c5671;
-  --linen:         #d9c8bf;
-  --rose:          #f98284;
-  --lavender:      #b0a9e4;
-  --periwinkle:    #accce4;
-  --seafoam:       #b3e3da;
-  --bubblegum:     #feaae4;
-  --sage:          #87a889;
-  --mint:          #b0eb93;
-  --chartreuse:    #e9f59d;
-  --peach:         #ffe6c6;
-  --terracotta:    #dea38b;
-  --apricot:       #ffc384;
-  --lemon:         #fff7a0;
-  --cream:         #fff7e4;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+
+   /* ─── Dark ─────────────────────────────────────── */
+  --base:       #28282e;
+ 
+  /* ─── Purple ───────────────────────────────────── */
+  --purple:     #6c5671;
+  --mauve:      #d9c8bf;
+ 
+  /* ─── Pink ─────────────────────────────────────── */
+  --red:        #f98284;
+  --pink:       #feaae4;
+  --peach:      #dea38b;
+ 
+  /* ─── Blue ─────────────────────────────────────── */
+  --lavender:   #b0a9e4;
+  --sky:        #accce4;
+ 
+  /* ─── Green ────────────────────────────────────── */
+  --mint:       #b3e3da;
+  --sage:       #87a889;
+  --lime:       #b0eb93;
+ 
+  /* ─── Yellow & Warm Neutrals ────────────────────── */
+  --chartreuse: #e9f59d;
+  --yellow:     #fff7a0;
+  --orange:     #ffc384;
+  --cream:      #ffe6c6;
+  --white:      #fff7e4;
 }
 
 @theme {
-  --color-computer: var(--mint);
-  --color-error: var(--rose);
-  --color-org: var(--periwinkle);
-  --color-contract: var(--lemon);
-  --color-document: var(--linen)
+  --color-input: var(--white);
+  --color-computer: var(--lime);
+  --color-error: var(--red);
+  --color-org: var(--lavender);
+  --color-contract: var(--yellow);
+  --color-source: var(--sky);
+  --color-user: var(--pink)
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 0;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color:grey transparent;
 }

@@ -1,60 +1,32 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
-import { 
-	legal,
-	general, 
-	contracts 
-} from '../data/lists';
+import { legal, general, contracts, sources, users } from '../data/lists';
+
+const sections = [
+  { label: 'legal',     items: legal,     color: 'text-input'    },
+  { label: 'general',   items: general,   color: 'text-computer' },
+	{ label: 'users', 		items: users,			color: 'text-user' 		 },
+  { label: 'contracts', items: contracts, color: 'text-contract' },
+  { label: 'sources',   items: sources,   color: 'text-source'   },
+];
 ---
 
-
 <MainLayout>
-	<div class="p-2 overflow-auto flex flex-col">
-		<div class="flex gap-2 items-center">
-			<p class="">DOCS</p>
-			<a 
-				href="https://19188103.com" 
-				class="underline">19-18-8-103
-			</a>
-		</div>
+  <div class="p-2 overflow-auto flex flex-col">
+    <div class="flex gap-2 items-center text-input">
+      <p>DOCS</p>
+      <a href="https://19188103.com" class="underline">19-18-8-103</a>
+    </div>
 
-		{/* LEGAL */}
-		<span class="mt-4 mb-1 text-document">
-			⎯⎯ legal ⎯⎯
-		</span>
-		{legal.map((item) => (
-			<a 
-				href={item.path}
-				class="hover:underline text-document pl-2"
-			>
-			• {item.title}
-			</a>
-		))}
-
-		{/* GENERAL */}
-		<span class="mt-4 mb-1 text-computer">
-			⎯⎯ general ⎯⎯
-		</span>
-		{general.map((item) => (
-			<a 
-				href={item.path}
-				class="hover:underline text-computer pl-2"
-			>
-			• {item.title}
-			</a>
-		))}
-
-		{/* CONTRACTS */}
-		<span class="mt-4 mb-1 text-contract">
-			⎯⎯ contracts ⎯⎯
-		</span>
-		{contracts.map((item) => (
-			<a 
-				href={item.path}
-				class="hover:underline text-contract pl-2"
-			>
-			• {item.title}
-			</a>
-		))}
-	</div>
+    {sections.map(({ label, items, color }) => (
+      <div class="mt-4">
+        <span class={`mb-1 ${color}`}>⎯⎯ {label} ⎯⎯</span>
+        {items.map((item) => (
+          <a href={item.path} class={`block hover:underline pl-2 ${color}`}>
+            • {item.title}
+          </a>
+        ))}
+      </div>
+    ))}
+  </div>
 </MainLayout>
