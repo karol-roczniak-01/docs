@@ -5,7 +5,7 @@ title: "How to Use It"
 
 # How to Use It
 
-This app runs in your browser ([19188103.com](https://19188103.com)) as a text-based interface — you interact by typing commands rather than clicking buttons. If that's new to you, don't worry. It's simpler than it looks.
+This app runs in your browser ([robotatec.com](https://robotatec.com)) as a text-based interface — you interact by typing commands rather than clicking buttons. If that's new to you, don't worry. It's simpler than it looks.
 
 ---
 

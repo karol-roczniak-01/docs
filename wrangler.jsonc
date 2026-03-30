@@ -11,8 +11,8 @@
 	},
 	"routes": [
 		{
-			"pattern": "docs.19188103.com",
-			"zone_name": "19188103.com",
+			"pattern": "docs.robotagroup.com",
+			"zone_name": "robotagroup.com",
 			"custom_domain": true
 		}
 	],

@@ -2,52 +2,38 @@
 
 :root {
   font-family: monospace;
-  background: black;
-  color: white;
+  background: var(--bg);
+  color: var(--color-cmd);
   caret-animation: manual;
   caret-shape: block;
-  caret-color: grey;
-
+  caret-color: var(--caret);
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-
-   /* ─── Dark ─────────────────────────────────────── */
-  --base:       #28282e;
- 
-  /* ─── Purple ───────────────────────────────────── */
-  --purple:     #6c5671;
-  --mauve:      #d9c8bf;
- 
-  /* ─── Pink ─────────────────────────────────────── */
-  --red:        #f98284;
-  --pink:       #feaae4;
-  --peach:      #dea38b;
- 
-  /* ─── Blue ─────────────────────────────────────── */
-  --lavender:   #b0a9e4;
-  --sky:        #accce4;
- 
-  /* ─── Green ────────────────────────────────────── */
-  --mint:       #b3e3da;
-  --sage:       #87a889;
-  --lime:       #b0eb93;
- 
-  /* ─── Yellow & Warm Neutrals ────────────────────── */
-  --chartreuse: #e9f59d;
-  --yellow:     #fff7a0;
-  --orange:     #ffc384;
-  --cream:      #ffe6c6;
-  --white:      #fff7e4;
 }
 
 @theme {
-  --color-input: var(--white);
-  --color-computer: var(--lime);
-  --color-error: var(--red);
-  --color-org: var(--lavender);
-  --color-contract: var(--yellow);
-  --color-source: var(--sky);
-  --color-user: var(--pink)
+  --color-out:      var(--color-out);
+  --color-cmd:      var(--color-cmd);
+  --color-user:     var(--color-user);
+  --color-contract: var(--color-contract);
+  --color-source:   var(--color-source);
+  --color-computer: var(--color-computer);
+  --color-error:    var(--color-error);
+}
+
+/* default theme — always needed */
+:root {
+  --bg:             #0a0800;
+  --caret:          #c8a060;
+
+  --color-out:      #8a6828;
+  --color-cmd:      #f0d888;
+  --color-user:     #b89070;
+  --color-contract: #c8a060;
+  --color-source:   #e8c070;
+  --color-computer: #90b850;
+  --color-error:    #c84820;
+  --color-border:   #2a1e08;
 }
 
 ::-webkit-scrollbar {
@@ -60,11 +46,11 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: grey;
+  background: var(--color-border);
   border-radius: 0;
 }
 
 * {
   scrollbar-width: thin;
-  scrollbar-color:grey transparent;
+  scrollbar-color: var(--color-border) transparent;
 }

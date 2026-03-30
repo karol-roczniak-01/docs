@@ -7,13 +7,13 @@ title: "Privacy Policy"
 
 Last updated: March 2026
 
-This Privacy Policy explains how 19-18-8-103 ("we", "us") collects, uses, and protects your personal data. We are committed to compliance with the General Data Protection Regulation (GDPR) and applicable Polish data protection law.
+This Privacy Policy explains how ROBOTA-TEC ("we", "us") collects, uses, and protects your personal data. We are committed to compliance with the General Data Protection Regulation (GDPR) and applicable Polish data protection law.
 
 ---
 
 ## 1. Who We Are
 
-19-18-8-103 is the data controller for personal data collected through this Platform. For any data-related questions, contact us at: **help@19188103.com**
+19-18-8-103 is the data controller for personal data collected through this Platform. For any data-related questions, contact us at: **help@robotatec.com**
 
 ---
 
@@ -97,7 +97,7 @@ Under GDPR, you have the right to:
 - **Data portability** — receive your data in a structured, machine-readable format
 - **Withdraw consent** at any time where processing is based on consent
 
-To exercise any of these rights, contact us at: **help@19188103.com**
+To exercise any of these rights, contact us at: **help@robotatec.com**
 
 Note: account deletion is currently handled manually. To request deletion, please contact us directly and we will process it within 30 days.
 
@@ -119,4 +119,4 @@ We may update this policy from time to time. We will notify you of significant c
 
 ## 10. Contact
 
-For any privacy-related questions: **help@19188103.com**
+For any privacy-related questions: **help@robotatec.com**

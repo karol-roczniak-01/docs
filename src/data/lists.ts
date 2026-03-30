@@ -10,10 +10,6 @@ export const legal = [
 ]
 
 export const general = [
-	{
-		title: "about",
-		path: "/general/about"
-	},
   {
     title: "how-to-use-it",
     path: "/general/how-to-use-it"

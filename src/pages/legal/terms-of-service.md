@@ -7,7 +7,7 @@ title: "Terms of Service"
 
 Last updated: March 2026
 
-These Terms of Service govern your use of 19-18-8-103 ("the Platform", "we", "us"). By using the Platform, you agree to these terms. If you do not agree, do not use the Platform.
+These Terms of Service govern your use of ROBOTA-TEC ("the Platform", "we", "us"). By using the Platform, you agree to these terms. If you do not agree, do not use the Platform.
 
 ---
 
@@ -45,7 +45,7 @@ When a client posts a contract, they are expressing an interest in receiving ser
 - We do not guarantee the accuracy of information provided by clients.
 - The Platform's role ends once contact details are delivered to the applying party.
 
-What you receive upon a successful payment is access to a potential client's contact information — nothing more. Any business relationship that follows is entirely between you and the client. 19-18-8-103 is not a party to any such agreement and bears no responsibility for its outcome.
+What you receive upon a successful payment is access to a potential client's contact information — nothing more. Any business relationship that follows is entirely between you and the client. ROBOTA-TEC is not a party to any such agreement and bears no responsibility for its outcome.
 
 **Payments for contract applications are non-refundable**, except where required by applicable law.
 
@@ -59,7 +59,7 @@ Payments are processed by a third-party provider (Stripe). By completing a payme
 
 ## 5. Limitation of Liability
 
-To the fullest extent permitted by applicable law, 19-18-8-103 is not liable for any indirect, incidental, or consequential damages arising from your use of the Platform, including but not limited to failed business deals, loss of revenue, or reliance on information provided by other users.
+To the fullest extent permitted by applicable law, ROBOTA-TEC is not liable for any indirect, incidental, or consequential damages arising from your use of the Platform, including but not limited to failed business deals, loss of revenue, or reliance on information provided by other users.
 
 Our total liability to you for any claim shall not exceed the amount you paid to us in the 30 days preceding the claim.
 
@@ -79,4 +79,4 @@ These terms are governed by the laws of Poland. Any disputes shall be resolved b
 
 ## 8. Contact
 
-If you have any questions about these terms, contact us at: **help@19188103.com**
+If you have any questions about these terms, contact us at: **help@robotatec.com**

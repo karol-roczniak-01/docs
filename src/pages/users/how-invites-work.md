@@ -15,7 +15,7 @@ There are two ways to get one:
 
 **From someone you know.** If you have a friend already using the app, they can generate a code and send it to you directly. Ask them to type `invite` — they'll get a code they can copy and pass along.
 
-**From us.** If you don't know anyone on the platform yet, send an email to [help@19188103.com](mailto:help@19188103.com) and introduce yourself. We'll take it from there.
+**From us.** If you don't know anyone on the platform yet, send an email to [help@robotatec.com](mailto:help@robotatec.com) and introduce yourself. We'll take it from there.
 
 ---
 

@@ -2,30 +2,49 @@
 import MainLayout from '../layouts/MainLayout.astro';
 import { legal, general, contracts, sources, users } from '../data/lists';
 
-const sections = [
-  { label: 'legal',     items: legal,     color: 'text-input'    },
-  { label: 'general',   items: general,   color: 'text-computer' },
-	{ label: 'users', 		items: users,			color: 'text-user' 		 },
-  { label: 'contracts', items: contracts, color: 'text-contract' },
-  { label: 'sources',   items: sources,   color: 'text-source'   },
+const tree = [
+  {
+    label: 'terminal',
+    color: 'text-input',
+    sections: [
+      { label: 'legal',     items: legal,     color: 'text-input'    },
+      { label: 'general',   items: general,   color: 'text-computer' },
+      { label: 'users',     items: users,     color: 'text-user'     },
+      { label: 'contracts', items: contracts, color: 'text-contract' },
+      { label: 'sources',   items: sources,   color: 'text-source'   },
+    ]
+  }
 ];
 ---
 
 <MainLayout>
   <div class="p-2 overflow-auto flex flex-col">
-    <div class="flex gap-2 items-center text-input">
-      <p>DOCS</p>
-      <a href="https://19188103.com" class="underline">19-18-8-103</a>
+    <div class="flex gap-2 items-center text-input mb-4">
+      <a href="https://robotagroup.com" class="underline">robota group</a>
     </div>
 
-    {sections.map(({ label, items, color }) => (
-      <div class="mt-4">
-        <span class={`mb-1 ${color}`}>⎯⎯ {label} ⎯⎯</span>
-        {items.map((item) => (
-          <a href={item.path} class={`block hover:underline pl-2 ${color}`}>
-            • {item.title}
-          </a>
-        ))}
+    {tree.map(({ label, color, sections }) => (
+      <div class="mb-3">
+        <span class={color}>┌─ {label} ─────────────────</span>
+        {sections.map(({ label: secLabel, items, color: secColor }, si) => {
+          const isLastSection = si === sections.length - 1;
+          return (
+            <div class="opacity-80">
+              <span class={secColor}>│  ┌─ {secLabel} ──────────</span>
+              {items.map((item, i) => {
+                const isLast = i === items.length - 1;
+                return (
+                  <a href={item.path} class={`block hover:underline ${secColor}`}>
+                    {isLastSection && isLast
+                      ? `│   • ${item.title}`
+                      : `│   • ${item.title}`}
+                  </a>
+                );
+              })}
+            </div>
+          );
+        })}
+        <span class={color}>└────────────────────────────</span>
       </div>
     ))}
   </div>

@@ -21,11 +21,12 @@
   }
 
   & p { 
+    color: var(--color-cmd);
     padding-bottom: 6px;
   }
 
   & a {
-    color: #b0eb93;
+    color: var(--color-source);
     text-decoration: underline;
   }
 
@@ -50,17 +51,18 @@
   & hr {
     margin-top: 6px;
     margin-bottom: 6px;
+    color: var(--color-border);
   }
 
   & code {
-    color: #ffffff;
+    color: var(--bg);
     font-family: monospace;
-    background-color: #ffe6c620;
+    background-color: var(--color-source);
     padding-right: 4px;
     padding-left: 4px;
   }
 
   & pre {
-    background: #b0eb9330;
+    background: var(--color-out);
   }
 }
